@@ -1,0 +1,39 @@
+:root {
+    --dark-bg-color1: #2b2a33;
+    --dark-bg-color2: #1c1b22;
+    --dark-highlight-color1: #36353D;
+    --dark-highlight-color2: #504d65;
+    --light-bg-color1: #11cdde;
+    --light-highlight-color1: #61d8e3;
+    --light-highlight-color2: white;
+}
+
+body {
+    background-color: var(--dark-bg-color1);
+}
+
+button,button:active {
+    background-color: var(--dark-bg-color1);
+    color: var(--light-bg-color1);
+    border-color: var(--light-bg-color1);
+    border-width: 1px;
+    border-radius: 5px;
+    margin: 5px;
+    padding: 5px 10px;
+    text-align: center;
+    border-style: outset;
+    width: 150px;
+}
+
+button:hover {
+    background-color: var(--dark-bg-color2);
+    color: var(--light-highlight-color1);
+    border-color: var(--light-highlight-color1);
+}
+
+button:active {
+    background-color: var(--dark-highlight-color1);
+    color: var(--light-highlight-color2);
+    border-color: var(--light-highlight-color2);
+}
+

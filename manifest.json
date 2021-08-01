@@ -1,8 +1,12 @@
 {
   "manifest_version": 2,
+  "developer": {
+    "name": "Andrei Birzan",
+    "url": "https://github.com/AndreiB97/Skipper"
+  },
   "name": "Skipper",
   "version": "1.0",
-  "description": "Automagically skips Netflix intros",
+  "description": "Automagically skips Netflix and Prime video intros",
   "icons": {
     "48": "icons/icon.svg",
     "96": "icons/icon.svg"
@@ -10,11 +14,45 @@
   "content_scripts": [
     {
       "matches": ["*://*.netflix.com/*"],
-      "js": ["skippers/netflix_skipper.js"]
+      "js": [
+        "lib/skippers/netflix_skipper.js"
+      ]
     },
     {
       "matches": ["*://*.primevideo.com/*"],
-      "js": ["skippers/prime_skipper.js"]
+      "js": [
+        "lib/skippers/prime_skipper.js"
+      ]
     }
-  ]
+  ],
+  "browser_action": {
+    "browser_style": true,
+    "default_icon": {
+      "19": "icons/icon.svg",
+      "38": "icons/icon.svg"
+    },
+    "default_title": "Skipper",
+    "default_popup": "lib/popup/popup.html",
+    "theme_icons": [
+      {
+        "light": "icons/icon.svg",
+        "dark": "icons/icon.svg",
+        "size": 16
+      },
+      {
+        "light": "icons/icon.svg",
+        "dark": "icons/icon.svg",
+        "size": 32
+      }
+    ]
+  },
+  "permissions": [
+    "storage"
+  ],
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "skipper@example.com",
+      "strict_min_version": "42.0"
+    }
+  }
 }
