@@ -11,6 +11,10 @@
     {
       "matches": ["*://*.netflix.com/*"],
       "js": ["netflix_skipper.js"]
+    },
+    {
+      "matches": ["*://*.primevideo.com/*"],
+      "js": ["prime_skipper.js"]
     }
   ]
 }
