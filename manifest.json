@@ -9,7 +9,7 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*.netflix.com/watch/*"],
+      "matches": ["*://*.netflix.com/*"],
       "js": ["netflix_skipper.js"]
     }
   ]
