@@ -10,11 +10,11 @@
   "content_scripts": [
     {
       "matches": ["*://*.netflix.com/*"],
-      "js": ["netflix_skipper.js"]
+      "js": ["skippers/netflix_skipper.js"]
     },
     {
       "matches": ["*://*.primevideo.com/*"],
-      "js": ["prime_skipper.js"]
+      "js": ["skippers/prime_skipper.js"]
     }
   ]
 }
