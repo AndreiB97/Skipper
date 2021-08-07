@@ -13,13 +13,13 @@
   },
   "content_scripts": [
     {
-      "matches": ["*://*.netflix.com/*"],
+      "matches": ["https://www.netflix.com/*"],
       "js": [
         "lib/skippers/netflix_skipper.js"
       ]
     },
     {
-      "matches": ["*://*.primevideo.com/*"],
+      "matches": ["https://www.primevideo.com/*"],
       "js": [
         "lib/skippers/prime_skipper.js"
       ]
