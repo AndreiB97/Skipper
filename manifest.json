@@ -48,11 +48,5 @@
   },
   "permissions": [
     "storage"
-  ],
-  "browser_specific_settings": {
-    "gecko": {
-      "id": "skipper@example.com",
-      "strict_min_version": "42.0"
-    }
-  }
+  ]
 }
